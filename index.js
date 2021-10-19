@@ -1,9 +1,10 @@
-let valorPresente = 0; //VP
-let valorFuturo = 0; //VF
-let interes = 0; //I
-let periodos = 0; //N
+let VP = document.getElementById("VP"); //Valor presente
+let VF = document.getElementById("VF"); //Valor futuro
+let I = document.getElementById("I"); //Intereses
+let N = document.getElementById("N"); //Numero de periodos
 
-function valorFuturo(){
-    valorPresente = valorPresente*(1+interes)
-    valorPresente = Math.pow(periodos,2)
+function valorFuturo(VP, I, N){
+    let subtotal = VP * (1 + I)
+    let total = Math.pow(subtotal, N)
+    return total
 }

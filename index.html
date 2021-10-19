@@ -13,13 +13,21 @@
 </header>
 <body>
     <form class="formulario" action="">
-    <input class="formulario--valorPresente" type="number" id="VP">
-    <input class="formulario--valorFuturo" type="number" id="VF">
-    <input class="formulario--intereses" type="number" id="I">
-    <input class="formulario--periodos" type="number" id="N">
+        <label class="formulario--labelVP" for="VP">Ingresa el valor presente (VP)</label>
+            <input class="formulario--labelVP--valorPresente" type="number" id="VP">
+        <label class="formulario--labelVF" for="VF">Ingresa el valor futuro (VF)</label>
+            <input class="formulario--labelVF--valorFuturo" type="number" id="VF">
+        <label class="formulario--labelI" for="I">Ingresa los intereses (I)</label>
+            <input class="formulario--labelI--intereses" type="number" id="I">
+        <label class="formulario--labelN" for="n">Ingresa los periodos (N)</label>
+            <input class="formulario--labelN--periodos" type="number" id="N">
+        <button class="formulario--calcular" id="calcular">Calcular</button>
     </form>
+        <div class="Resultado"></div>
 </body>
 <footer>
+<p>El valor futuro de una inversión es justamente entender cuál va a ser el dinero en el futuro cuando acabe esta inversión o después de un cierto tiempo. Para esto lo puedes obtener si tienes el interés dado al periodo de esta inversión, el número de periodos a invertir y el valor presente, o cuánto vale el dinero al día de hoy. Esto se puede calcular con base en la siguiente fórmula:
 
+</p>
 </footer>
 </html>
