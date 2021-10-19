@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="index.js">
+    <script src="index.js"></script>
     <title>Reto Logico </title>
 </head>
 <header>
@@ -21,13 +21,18 @@
             <input class="formulario--labelI--intereses" type="number" id="I">
         <label class="formulario--labelN" for="n">Ingresa los periodos (N)</label>
             <input class="formulario--labelN--periodos" type="number" id="N">
-        <button class="formulario--calcular" id="calcular">Calcular</button>
     </form>
-        <div class="Resultado"></div>
+    <section>
+        <button class="button" onclick="calcularvf()">calcular Valor Final</button>
+        <input class="input" type="text" id="resultadovf">
+    </section>
+    <section>
+        <button class="button" onclick="calcularvi()">calcular Valor Inicial</button>
+        <input class="input" type="text" id="resultadovi">
+    </section>
 </body>
 <footer>
 <p>El valor futuro de una inversión es justamente entender cuál va a ser el dinero en el futuro cuando acabe esta inversión o después de un cierto tiempo. Para esto lo puedes obtener si tienes el interés dado al periodo de esta inversión, el número de periodos a invertir y el valor presente, o cuánto vale el dinero al día de hoy. Esto se puede calcular con base en la siguiente fórmula:
-
 </p>
 </footer>
 </html>
